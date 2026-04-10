@@ -1,0 +1,29 @@
+{
+  "name": "BlockScore",
+  "description": "B2B tenant feedback data platform for Australian residential buildings",
+
+  "colors": {
+    "background": "0d2e28",
+    "background_alt": "0a231e",
+    "text": "ffffff",
+    "text_secondary": "a1e8d9",
+    "accent": "4dd4c6",
+    "accent_secondary": "2dd4aa",
+    "accent_tertiary": "6ffce0",
+    "code_bg": "081c18",
+    "card_bg": "113a33",
+    "card_bg_alt": "15473e"
+  },
+
+  "fonts": {
+    "heading": "Inter Tight",
+    "body": "Inter",
+    "code": "JetBrains Mono"
+  },
+
+  "assets": {
+    "logo": null,
+    "logo_dark": null,
+    "icon": null
+  }
+}

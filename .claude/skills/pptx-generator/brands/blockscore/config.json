@@ -1,7 +1,7 @@
 {
   "output": {
-    "directory": "Dynamous/Content-Ideation/Presentations",
-    "naming": "{name}",
+    "directory": "output/blockscore",
+    "naming": "{name}-{date}",
     "keep_parts": false
   },
   "generation": {

@@ -25,6 +25,8 @@ Use this skill whenever you are working with Remotion projects. This includes:
 
 ## How to use
 
+Make sure you use the branding ./brand/blockscore/* when generating any content related to Remotion. This will ensure the tone of voice, style, and formatting are consistent with Remotion's brand guidelines.
+
 Read individual rule files for detailed explanations and code examples:
 
 - [rules/3d.md](rules/3d.md) - 3D content in Remotion using Three.js and React Three Fiber

@@ -1,0 +1,292 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-2: var(--primary-2);
+  --color-primary-3: var(--primary-3);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
+  --color-line-2: var(--line-2);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --color-fg-4: var(--fg-4);
+  --color-series-company: var(--series-company);
+  --color-series-state: var(--series-state);
+  --color-series-nation: var(--series-nation);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --radius: 0.45rem;
+  --accent-hue: 170;
+  --background: #ffffff;
+  --bg-2: #f7fbfa;
+  --bg-3: #f1f8f6;
+  --foreground: #081b18;
+  --fg-2: #264a44;
+  --fg-3: #4b6b66;
+  --card: #ffffff;
+  --card-foreground: #081b18;
+  --popover: #ffffff;
+  --popover-foreground: #081b18;
+  --primary: #0d8070;
+  --primary-foreground: #ffffff;
+  --primary-2: #086b5e;
+  --primary-3: #053d36;
+  --secondary: #2aa08a;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f8f6;
+  --muted-foreground: #4b6b66;
+  --accent: #e4f4f0;
+  --accent-foreground: #053d36;
+  --destructive: oklch(0.58 0.22 27);
+  --border: #d8ebe5;
+  --line-2: #ecf4f1;
+  --input: #d8ebe5;
+  --ring: #0d8070;
+  --chart-1: #0d8070;
+  --chart-2: #2aa08a;
+  --chart-3: #086b5e;
+  --chart-4: #064e45;
+  --chart-5: #053d36;
+  --sidebar: #f8fcfb;
+  --sidebar-foreground: #0f172a;
+  --sidebar-primary: #0d8070;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e4f4f0;
+  --sidebar-accent-foreground: #053d36;
+  --sidebar-border: #d8ebe5;
+  --sidebar-ring: #0d8070;
+  --gradient: linear-gradient(135deg, oklch(0.55 0.13 var(--accent-hue)) 0%, oklch(0.62 0.14 calc(var(--accent-hue) - 10)) 50%, oklch(0.70 0.12 calc(var(--accent-hue) - 20)) 100%);
+  --gradient-soft: linear-gradient(135deg, oklch(0.96 0.02 var(--accent-hue)) 0%, oklch(0.94 0.03 calc(var(--accent-hue) - 20)) 100%);
+  --shadow-sm: 0 1px 2px rgba(8, 27, 24, 0.04), 0 1px 3px rgba(8, 27, 24, 0.03);
+  --shadow-md: 0 2px 4px rgba(8, 27, 24, 0.04), 0 8px 24px rgba(8, 27, 24, 0.06);
+  --shadow-lg: 0 1px 2px rgba(8, 27, 24, 0.04), 0 24px 48px -12px rgba(8, 27, 24, 0.12), 0 8px 16px -8px rgba(8, 27, 24, 0.08);
+  --shadow-glow: 0 0 0 1px rgba(13, 128, 112, 0.08), 0 20px 60px -20px rgba(13, 128, 112, 0.35);
+  --ok: #10b981;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --fg-4: #7a9994;
+  --series-company: #8b5cf6;
+  --series-state: #f59e0b;
+  --series-nation: #60a5fa;
+}
+
+.dark {
+  --background: #061a17;
+  --bg-2: #0b2520;
+  --bg-3: #0e2e28;
+  --foreground: #eafaf5;
+  --fg-2: #a8d5cc;
+  --fg-3: #6a9389;
+  --card: #0b2520;
+  --card-foreground: #eafaf5;
+  --popover: #0b2520;
+  --popover-foreground: #eafaf5;
+  --primary: #4dd4c6;
+  --primary-foreground: #061a17;
+  --primary-2: #2dd4aa;
+  --primary-3: #6ffce0;
+  --secondary: #2dd4aa;
+  --secondary-foreground: #061a17;
+  --muted: #0f332c;
+  --muted-foreground: #a8d5cc;
+  --accent: #165046;
+  --accent-foreground: #6ffce0;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #153f37;
+  --line-2: #0f2a25;
+  --input: #153f37;
+  --ring: #4dd4c6;
+  --chart-1: #4dd4c6;
+  --chart-2: #2dd4aa;
+  --chart-3: #1a8a7d;
+  --chart-4: #6ffce0;
+  --chart-5: #4df4d4;
+  --sidebar: #061a17;
+  --sidebar-foreground: #eafaf5;
+  --sidebar-primary: #4dd4c6;
+  --sidebar-primary-foreground: #061a17;
+  --sidebar-accent: #165046;
+  --sidebar-accent-foreground: #6ffce0;
+  --sidebar-border: #153f37;
+  --sidebar-ring: #4dd4c6;
+  --gradient: linear-gradient(135deg, oklch(0.80 0.16 var(--accent-hue)) 0%, oklch(0.72 0.18 calc(var(--accent-hue) - 10)) 50%, oklch(0.60 0.17 calc(var(--accent-hue) - 30)) 100%);
+  --gradient-soft: linear-gradient(135deg, oklch(0.22 0.04 var(--accent-hue)) 0%, oklch(0.18 0.05 calc(var(--accent-hue) - 20)) 100%);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 24px 48px -12px rgba(0, 0, 0, 0.5), 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 0 1px rgba(77, 212, 198, 0.15), 0 20px 60px -20px rgba(77, 212, 198, 0.45);
+  --ok: #10b981;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --fg-4: #476c62;
+  --series-company: #a78bfa;
+  --series-state: #fbbf24;
+  --series-nation: #93c5fd;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+}
+
+.inter-tight {
+  font-family: var(--font-inter-tight), "Inter Tight", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mono {
+  font-family: var(--font-geist-mono), ui-monospace, Menlo, monospace;
+  font-feature-settings: "ss02";
+}
+
+.text-gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 3x3 brand mark */
+.brand-mark {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.brand-mark span {
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.brand-mark span:nth-child(2),
+.brand-mark span:nth-child(4),
+.brand-mark span:nth-child(9) {
+  background: var(--accent);
+}
+
+.brand-mark span:nth-child(6) {
+  background: var(--primary-2);
+}
+
+/* Section tag pill — reused across pages */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--bg-3);
+  color: var(--primary-2);
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid color-mix(in oklab, var(--primary) 15%, transparent);
+  letter-spacing: -0.003em;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes barFill {
+  from {
+    transform: scaleX(0);
+    opacity: 0.4;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes vbar {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* ── Clerk component overrides ── */
+
+.cl-formFieldInput:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.cl-footerActionLink,
+.cl-formResendCodeLink {
+  color: var(--primary);
+}
+
+.cl-card {
+  box-shadow: none !important;
+}
+
+.cl-footer,
+.cl-footerAction {
+  background: transparent !important;
+}
+
+.cl-internal-b3fm6y {
+  background: transparent !important;
+}

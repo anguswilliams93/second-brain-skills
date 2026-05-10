@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="0%" r="100%">
+      <stop offset="0%"  stop-color="#113a33"/>
+      <stop offset="55%" stop-color="#0d2e28"/>
+      <stop offset="100%" stop-color="#0a231e"/>
+    </radialGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#0d8070"/>
+      <stop offset="50%" stop-color="#2aa08a"/>
+      <stop offset="100%" stop-color="#4dd4c6"/>
+    </linearGradient>
+    <linearGradient id="loopBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4dd4c6"/>
+      <stop offset="50%"  stop-color="#2dd4aa"/>
+      <stop offset="100%" stop-color="#6ffce0"/>
+    </linearGradient>
+    <style>
+      .h1   { font-family: 'Inter Tight','Inter',system-ui,sans-serif; font-weight:500; letter-spacing:-0.035em; fill:#ffffff; }
+      .h2   { font-family: 'Inter Tight','Inter',system-ui,sans-serif; font-weight:500; letter-spacing:-0.03em;  fill:#ffffff; }
+      .h3   { font-family: 'Inter Tight','Inter',system-ui,sans-serif; font-weight:500; letter-spacing:-0.015em; fill:#ffffff; }
+      .body { font-family: 'Inter','Inter Tight',system-ui,sans-serif; font-weight:400; letter-spacing:-0.003em; fill:#a1e8d9; }
+      .caption { font-family: 'Inter','Inter Tight',system-ui,sans-serif; font-weight:400; fill:#a1e8d9; opacity:0.85; }
+      .metric { font-family: 'Inter Tight',system-ui,sans-serif; font-weight:500; letter-spacing:-0.03em; }
+      .mono  { font-family: 'Geist Mono','JetBrains Mono',ui-monospace,monospace; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; fill:#a1e8d9; }
+      .emph { font-style:italic; fill:url(#brandGrad); }
+    </style>
+  </defs>
+
+  <!-- canvas -->
+  <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+
+  <!-- decorative corner grid (top-right) -->
+  <g transform="translate(960,72)" opacity="0.35">
+    <rect x="0"  y="0"  width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="16" y="0"  width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="32" y="0"  width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="0"  y="16" width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="16" y="16" width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="32" y="16" width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="0"  y="32" width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="16" y="32" width="10" height="10" rx="2" fill="#165046"/>
+    <rect x="32" y="32" width="10" height="10" rx="2" fill="#165046"/>
+  </g>
+
+  <!-- wordmark + 3x3 mark -->
+  <g transform="translate(64,72)">
+    <g transform="scale(1.23)">
+      <rect x="0"   y="0"   width="7" height="7" rx="1.6" fill="#165046"/>
+      <rect x="9.5" y="0"   width="7" height="7" rx="1.6" fill="#165046"/>
+      <rect x="19"  y="0"   width="7" height="7" rx="1.6" fill="#6ffce0"/>
+      <rect x="0"   y="9.5" width="7" height="7" rx="1.6" fill="#165046"/>
+      <rect x="9.5" y="9.5" width="7" height="7" rx="1.6" fill="#2dd4aa"/>
+      <rect x="19"  y="9.5" width="7" height="7" rx="1.6" fill="#1a8a7d"/>
+      <rect x="0"   y="19"  width="7" height="7" rx="1.6" fill="#2dd4aa"/>
+      <rect x="9.5" y="19"  width="7" height="7" rx="1.6" fill="#6ffce0"/>
+      <rect x="19"  y="19"  width="7" height="7" rx="1.6" fill="#4df4d4"/>
+    </g>
+    <text x="48" y="28" font-family="'Inter Tight',sans-serif" font-weight="700" font-size="26" letter-spacing="-0.02em">
+      <tspan fill="#ffffff">Block</tspan><tspan fill="#4dd4c6">Score</tspan>
+    </text>
+  </g>
+
+  <!-- header block -->
+  <g transform="translate(64,180)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#15473e"/>
+    <text x="90" y="20" class="mono" font-size="12" text-anchor="middle">WHO BENEFITS</text>
+
+    <text x="0" y="92"  class="h1" font-size="64">How BlockScore</text>
+    <text x="0" y="160" class="h1" font-size="64">benefits <tspan class="emph">everyone</tspan>.</text>
+
+    <text x="0" y="216" class="body" font-size="20">Anonymous tenant feedback. Independent building scores.</text>
+    <text x="0" y="244" class="body" font-size="20">Every dollar of revenue recycled back into the buildings we call home.</text>
+  </g>
+
+  <!-- three stakeholder cards: y 460..920 (h=460), w=304, gap=20 -->
+
+  <!-- ============== Card 1: Tenants (primary #4dd4c6) ============== -->
+  <g transform="translate(64,460)">
+    <rect width="304" height="460" rx="16" fill="#113a33" stroke="#165046" stroke-width="1"/>
+
+    <!-- avatar + role -->
+    <circle cx="56" cy="56" r="26" fill="#4dd4c6"/>
+    <text x="56" y="65" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="26" fill="#0d2e28" text-anchor="middle">T</text>
+    <text x="98" y="50" class="h3" font-size="22">Tenants</text>
+    <text x="98" y="74" class="caption" font-size="14">Renters &amp; resident owners</text>
+
+    <line x1="24" y1="110" x2="280" y2="110" stroke="#165046" stroke-width="1"/>
+
+    <!-- benefits -->
+    <g font-size="15" class="body">
+      <circle cx="32" cy="148" r="3" fill="#4dd4c6"/>
+      <text x="48" y="153">Anonymous voice — no retaliation,</text>
+      <text x="48" y="173">no signature trail.</text>
+
+      <circle cx="32" cy="208" r="3" fill="#4dd4c6"/>
+      <text x="48" y="213">Earn credit for sharing how your</text>
+      <text x="48" y="233">building actually performs.</text>
+
+      <circle cx="32" cy="268" r="3" fill="#4dd4c6"/>
+      <text x="48" y="273">See your home benchmarked vs</text>
+      <text x="48" y="293">368,000+ Australian buildings.</text>
+
+      <circle cx="32" cy="328" r="3" fill="#4dd4c6"/>
+      <text x="48" y="333">Drive real maintenance &amp; safety</text>
+      <text x="48" y="353">change with structured signal.</text>
+    </g>
+
+    <!-- stat chip -->
+    <rect x="24" y="388" width="256" height="48" rx="12" fill="#15473e"/>
+    <text x="40" y="418" class="metric" font-size="26" fill="#4dd4c6">$29</text>
+    <text x="92" y="406" class="mono" font-size="11">CREDIT</text>
+    <text x="92" y="424" class="caption" font-size="13">per 8-min quarterly survey</text>
+  </g>
+
+  <!-- ============== Card 2: Owners / Strata (#2dd4aa) ============== -->
+  <g transform="translate(388,460)">
+    <rect width="304" height="460" rx="16" fill="#113a33" stroke="#165046" stroke-width="1"/>
+
+    <circle cx="56" cy="56" r="26" fill="#2dd4aa"/>
+    <text x="56" y="65" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="26" fill="#0d2e28" text-anchor="middle">O</text>
+    <text x="98" y="50" class="h3" font-size="22">Owners &amp; Strata</text>
+    <text x="98" y="74" class="caption" font-size="14">Committees &amp; managing agents</text>
+
+    <line x1="24" y1="110" x2="280" y2="110" stroke="#165046" stroke-width="1"/>
+
+    <g font-size="15" class="body">
+      <circle cx="32" cy="148" r="3" fill="#2dd4aa"/>
+      <text x="48" y="153">Real-time signal across six</text>
+      <text x="48" y="173">weighted building dimensions.</text>
+
+      <circle cx="32" cy="208" r="3" fill="#2dd4aa"/>
+      <text x="48" y="213">Catch maintenance &amp; governance</text>
+      <text x="48" y="233">issues before they escalate.</text>
+
+      <circle cx="32" cy="268" r="3" fill="#2dd4aa"/>
+      <text x="48" y="273">Track quarterly trajectory, not</text>
+      <text x="48" y="293">just one-off complaint volume.</text>
+
+      <circle cx="32" cy="328" r="3" fill="#2dd4aa"/>
+      <text x="48" y="333">Defensible, anonymous data for</text>
+      <text x="48" y="353">levy &amp; sinking-fund decisions.</text>
+    </g>
+
+    <rect x="24" y="388" width="256" height="48" rx="12" fill="#15473e"/>
+    <text x="40" y="418" class="metric" font-size="26" fill="#2dd4aa">6</text>
+    <text x="68" y="406" class="mono" font-size="11">DIMENSIONS</text>
+    <text x="68" y="424" class="caption" font-size="13">maintenance · governance · livability</text>
+  </g>
+
+  <!-- ============== Card 3: Buyers / Investors (#6ffce0) ============== -->
+  <g transform="translate(712,460)">
+    <rect width="304" height="460" rx="16" fill="#113a33" stroke="#165046" stroke-width="1"/>
+
+    <circle cx="56" cy="56" r="26" fill="#6ffce0"/>
+    <text x="56" y="65" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="26" fill="#0d2e28" text-anchor="middle">B</text>
+    <text x="98" y="50" class="h3" font-size="22">Buyers &amp; Investors</text>
+    <text x="98" y="74" class="caption" font-size="14">Pre-purchase &amp; portfolio</text>
+
+    <line x1="24" y1="110" x2="280" y2="110" stroke="#165046" stroke-width="1"/>
+
+    <g font-size="15" class="body">
+      <circle cx="32" cy="148" r="3" fill="#6ffce0"/>
+      <text x="48" y="153">Independent score before signing</text>
+      <text x="48" y="173">— not the agent's brochure.</text>
+
+      <circle cx="32" cy="208" r="3" fill="#6ffce0"/>
+      <text x="48" y="213">Trajectory shows whether the</text>
+      <text x="48" y="233">building is improving or sliding.</text>
+
+      <circle cx="32" cy="268" r="3" fill="#6ffce0"/>
+      <text x="48" y="273">Compare against suburb, state,</text>
+      <text x="48" y="293">and national benchmarks.</text>
+
+      <circle cx="32" cy="328" r="3" fill="#6ffce0"/>
+      <text x="48" y="333">Avoid expensive surprises in</text>
+      <text x="48" y="353">levies, lifts, and structural defects.</text>
+    </g>
+
+    <rect x="24" y="388" width="256" height="48" rx="12" fill="#15473e"/>
+    <text x="40" y="418" class="metric" font-size="26" fill="#6ffce0">368K+</text>
+    <text x="118" y="406" class="mono" font-size="11">BUILDINGS</text>
+    <text x="118" y="424" class="caption" font-size="13">benchmarked across Australia</text>
+  </g>
+
+  <!-- ============== The Loop strip (y 950..1230) ============== -->
+  <g transform="translate(64,950)">
+    <rect width="952" height="280" rx="20" fill="#113a33" stroke="#165046" stroke-width="1"/>
+
+    <!-- header row -->
+    <rect x="32" y="32" width="120" height="28" rx="14" fill="#15473e"/>
+    <text x="92" y="50" class="mono" font-size="11" text-anchor="middle">THE LOOP</text>
+
+    <text x="32"  y="100" class="h2" font-size="30">Every dollar back into your <tspan class="emph">building</tspan>.</text>
+
+    <!-- big stat right side -->
+    <text x="920" y="60"  class="mono" font-size="11" text-anchor="end">RECYCLED INTO BUILDINGS</text>
+    <text x="920" y="104" class="metric" font-size="44" fill="#4dd4c6" text-anchor="end">$4.2M</text>
+
+    <!-- 4-step horizontal flow -->
+    <!-- connector -->
+    <line x1="120" y1="190" x2="832" y2="190" stroke="#165046" stroke-width="2" stroke-dasharray="6 8"/>
+
+    <!-- step 1 -->
+    <circle cx="120" cy="190" r="26" fill="#4dd4c6"/>
+    <text x="120" y="199" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="22" fill="#0d2e28" text-anchor="middle">1</text>
+    <text x="120" y="240" class="h3" font-size="15" text-anchor="middle">Tenant submits</text>
+    <text x="120" y="258" class="caption" font-size="12" text-anchor="middle">8 min · quarterly</text>
+
+    <!-- step 2 -->
+    <circle cx="358" cy="190" r="26" fill="#2dd4aa"/>
+    <text x="358" y="199" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="22" fill="#0d2e28" text-anchor="middle">2</text>
+    <text x="358" y="240" class="h3" font-size="15" text-anchor="middle">Earns credit</text>
+    <text x="358" y="258" class="caption" font-size="12" text-anchor="middle">+$29 per survey</text>
+
+    <!-- step 3 -->
+    <circle cx="596" cy="190" r="26" fill="#6ffce0"/>
+    <text x="596" y="199" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="22" fill="#0d2e28" text-anchor="middle">3</text>
+    <text x="596" y="240" class="h3" font-size="15" text-anchor="middle">Buyer purchases report</text>
+    <text x="596" y="258" class="caption" font-size="12" text-anchor="middle">368,000+ buildings</text>
+
+    <!-- step 4 -->
+    <circle cx="832" cy="190" r="26" fill="#4df4d4"/>
+    <text x="832" y="199" font-family="'Inter Tight',sans-serif" font-weight="500" font-size="22" fill="#0d2e28" text-anchor="middle">4</text>
+    <text x="832" y="240" class="h3" font-size="15" text-anchor="middle">Funds sinking fund</text>
+    <text x="832" y="258" class="caption" font-size="12" text-anchor="middle">100% of revenue returned</text>
+  </g>
+
+  <!-- footer -->
+  <text x="540" y="1296" class="body" font-size="14" fill="#a1e8d9" opacity="0.55" text-anchor="middle">
+    blockscore.au · anonymous tenant feedback · independent building scores · 2026
+  </text>
+</svg>

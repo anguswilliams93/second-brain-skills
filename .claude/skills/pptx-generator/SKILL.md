@@ -25,6 +25,8 @@ Generate professional, on-brand presentation slides using python-pptx. This skil
 
 **IMPORTANT:** All skill resources are in `.claude/skills/pptx-generator/`. Always use Glob patterns starting with `.claude/skills/pptx-generator/` to find files.
 
+**BlockScore brand — canonical source:** `.claude/skills/_shared/blockscore/tokens.md` and `tokens.json` are the single source of truth for the BlockScore brand. The local `brands/blockscore/brand.json` and `brand-system.md` mirror those canonical files. If you spot drift between them, update the canonical first, then re-sync the local mirror — never the other way around.
+
 ---
 
 ## ⚠️ CRITICAL: Batch Generation Rules

@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778142107334,
+  "projectRoot": "C:\\dev\\obsidian\\second-brain-skills",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "output": {
+      "path": "output",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778142107319,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": ".claude\\skills\\infographic-creator\\SKILL.md",
+      "accessCount": 9,
+      "lastAccessed": 1777962286396,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\infographic-creator\\references\\svg-patterns.md",
+      "accessCount": 6,
+      "lastAccessed": 1777962270944,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\infographic-creator\\references\\brand.md",
+      "accessCount": 5,
+      "lastAccessed": 1777961424903,
+      "type": "file"
+    },
+    {
+      "path": "output\\blockscore\\infographics\\budget-policy-gap-2026-05-05.svg",
+      "accessCount": 4,
+      "lastAccessed": 1777962951970,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\pptx-generator\\brands\\blockscore\\brand.json",
+      "accessCount": 3,
+      "lastAccessed": 1777961040954,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\pptx-generator\\brands\\blockscore\\brand-system.md",
+      "accessCount": 3,
+      "lastAccessed": 1777961069522,
+      "type": "file"
+    },
+    {
+      "path": "output\\blockscore\\infographics\\skill-smoke-test-2026-05-05.svg",
+      "accessCount": 3,
+      "lastAccessed": 1777961223788,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\remotion-best-practices\\SKILL.md",
+      "accessCount": 3,
+      "lastAccessed": 1777963033826,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\pptx-generator\\SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1777961163734,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\design\\SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1777961171078,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\brand-voice-generator\\SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1777961178615,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\infographic-creator\\references\\portrait-mobile.md",
+      "accessCount": 2,
+      "lastAccessed": 1777961659245,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\_shared\\blockscore\\README.md",
+      "accessCount": 2,
+      "lastAccessed": 1777962745393,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\_shared\\blockscore\\tokens.md",
+      "accessCount": 2,
+      "lastAccessed": 1777962760263,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\pptx-generator\\brands\\blockscore\\config.json",
+      "accessCount": 1,
+      "lastAccessed": 1777960476002,
+      "type": "file"
+    },
+    {
+      "path": "design_handoff_blockscore_landing\\globals.css",
+      "accessCount": 1,
+      "lastAccessed": 1777960872798,
+      "type": "file"
+    },
+    {
+      "path": "design_handoff_blockscore_landing\\README.md",
+      "accessCount": 1,
+      "lastAccessed": 1777960873125,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\_shared\\blockscore\\tokens.json",
+      "accessCount": 1,
+      "lastAccessed": 1777961001136,
+      "type": "file"
+    },
+    {
+      "path": "output\\blockscore\\infographics\\how-blockscore-benefits-everyone-2026-05-05.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777961423220,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\infographic-creator\\references\\landscape-ads.md",
+      "accessCount": 1,
+      "lastAccessed": 1777961504144,
+      "type": "file"
+    },
+    {
+      "path": "output\\blockscore\\infographics\\how-blockscore-benefits-everyone-story-2026-05-05.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777961716508,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\remotion-best-practices\\rules\\google-fonts.md",
+      "accessCount": 1,
+      "lastAccessed": 1777962761171,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\remotion-best-practices\\rules\\blockscore-brand.md",
+      "accessCount": 1,
+      "lastAccessed": 1777962851073,
+      "type": "file"
+    },
+    {
+      "path": ".claude\\skills\\remotion-best-practices\\rules\\svg-infographic.md",
+      "accessCount": 1,
+      "lastAccessed": 1777963029550,
+      "type": "file"
+    },
+    {
+      "path": "output\\blockscore\\infographics\\dynamic-blockscore-overview-2026-05-05.svg",
+      "accessCount": 1,
+      "lastAccessed": 1777963207032,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

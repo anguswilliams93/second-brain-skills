@@ -17,6 +17,17 @@ description: |
 
 Generate complete brand configuration files for use with the PPTX Generator and other brand-aware skills. This skill guides users through an interactive process to define their brand identity and writing voice.
 
+**BlockScore is already configured.** For BlockScore-specific requests (voice, tone, brand system), do NOT regenerate from scratch — read the canonical files first:
+
+- `.claude/skills/_shared/blockscore/tokens.md` — visual + voice canonical source
+- `.claude/skills/_shared/blockscore/tokens.json` — machine-readable values
+- `.claude/skills/pptx-generator/brands/blockscore/tone-of-voice.md` — voice guidelines
+- `.claude/skills/pptx-generator/brands/blockscore/brand-system.md` — PPTX-specific summary (mirrors canonical)
+
+Only edit the canonical (`_shared/blockscore/`) and let the local mirrors re-sync. The "Updating Existing Brand" section below applies to BlockScore: any change goes to the canonical first.
+
+For NEW brands (not BlockScore), follow the full process below.
+
 ## What This Creates
 
 | File | Purpose | Used By |

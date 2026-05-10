@@ -1,4 +1,6 @@
 {
+  "_canonical_source": ".claude/skills/_shared/blockscore/tokens.json",
+  "_note": "Mirrors dark-mode tokens from the canonical source. Light-mode tokens live in tokens.json. Update tokens.json/tokens.md first, then sync this file.",
   "name": "BlockScore",
   "description": "B2B tenant feedback data platform for Australian residential buildings",
 
@@ -12,14 +14,53 @@
     "accent_tertiary": "6ffce0",
     "code_bg": "081c18",
     "card_bg": "113a33",
-    "card_bg_alt": "15473e"
+    "card_bg_alt": "15473e",
+
+    "primary": "4dd4c6",
+    "secondary": "2dd4aa",
+    "muted": "15473e",
+    "muted_foreground": "a1e8d9",
+    "border": "165046",
+    "ring": "4dd4c6",
+
+    "chart_1": "4dd4c6",
+    "chart_2": "2dd4aa",
+    "chart_3": "1a8a7d",
+    "chart_4": "6ffce0",
+    "chart_5": "4df4d4",
+
+    "light_background": "ffffff",
+    "light_foreground": "0f172a",
+    "light_primary": "0d8070",
+    "light_secondary": "2aa08a",
+    "light_muted": "f1f8f6",
+    "light_muted_foreground": "086b5e",
+    "light_border": "b2e0d6"
   },
 
   "fonts": {
     "heading": "Inter Tight",
     "body": "Inter",
-    "code": "JetBrains Mono"
+    "code": "Geist Mono",
+    "code_fallback": "JetBrains Mono"
   },
+
+  "type_scale": {
+    "h1_clamp": "clamp(40px, 6.2vw, 82px)",
+    "h2_clamp": "clamp(32px, 4vw, 52px)",
+    "h3_px": 20,
+    "body_px_min": 14.5,
+    "body_px_max": 17,
+    "eyebrow_mono_px_min": 11,
+    "eyebrow_mono_px_max": 12,
+    "h1_weight": 500,
+    "h2_weight": 500,
+    "h3_weight": 500,
+    "body_weight": 400,
+    "eyebrow_weight": 500
+  },
+
+  "radius_rem": 0.45,
 
   "assets": {
     "logo": null,
